@@ -22,7 +22,7 @@ const Hero = () => {
     {/* <div>clients image section goes here</div> */}
   </div>
   <div>
-    <img data-aos="zoom-in" data-aos-delay="1000" src={herobanner} className='lg:w-[1000px] lg:h-[600px]' alt="" />
+    <img data-aos="zoom-in" data-aos-delay="1000" src={herobanner} className='xl:w-[1000px] xl:h-[600px]lg:w-[500] lg:h-[300]'/>
   </div>
 </section>
   )
