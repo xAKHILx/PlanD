@@ -16,26 +16,37 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="w-[90%] m-auto flex lg:flex-row flex-col justify-between items-center gap-28 py-10 "
+      className="container mx-auto px-6 lg:px-20 py-16 flex flex-col gap-10"
     >
       <div
         data-aos="zoom-in"
         data-aos-delay="400"
-        className="bg-black lg:p-20 p-10 flex lg:flex-row flex-col justify-center gap-20 rounded-3xl"
+        className="bg-black p-6 lg:p-16 flex flex-col lg:flex-row flex-wrap justify-center gap-10 rounded-3xl"
       >
         {servicesinfo.map((item, index) => (
           <div
             key={index}
-            className="flex flex-col justify-center items-start gap-6"
+            className="flex flex-col justify-start items-center lg:items-start text-center lg:text-left gap-4 max-w-sm"
           >
-            <img src={item.icon} alt="" className="size-50 p-3  rounded-3xl" />
-            <h1 className="text-[26px] text-white font-semibold font-rlway">
+            {/* Icon */}
+            <div className=" p-4 rounded-3xl flex items-center justify-center w-30 h-30">
+              {/* bg-purple-500 w-16 h-16 */}
+              <img
+                src={item.icon}
+                alt={item.title}
+                className="w-30 h-30 rounded-3xl object-contain"
+              />
+            </div>
+            {/* Title */}
+            <h1 className="text-[20px] md:text-[24px] lg:text-[26px] text-white font-semibold font-rlway">
               {item.title}
             </h1>
-            <p className="font-rlway text-[18px] text-slate-200">
+            {/* Description */}
+            <p className="font-rlway text-[16px] md:text-[18px] text-slate-200">
               {item.about}
             </p>
-            {/* <button className="text-purp font-rlway font-semibold text-[18px] flex justify-center items-center gap-3">
+            {/* Button (Optional) */}
+            {/* <button className="text-purp font-rlway font-semibold text-[18px] flex justify-center items-center gap-2">
               {item.label}
               <FaArrowRight />
             </button> */}

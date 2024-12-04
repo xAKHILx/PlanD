@@ -61,47 +61,23 @@ export const counts = [
   },
 ];
 
-export const pricingplan = [
-  {
-    type: "Life Plan",
-    about: "Perfect choice for individual",
-    price: "$29.00",
-    label: "Get Start now",
-    specs: "Lite includes:",
-  },
-  {
-    type: "Pro Plan",
-    about: "Everything in pro, plus",
-    price: "$39.00",
-    label: "Get Start now",
-    specs: "Everything in lite, plus:",
-  },
-  {
-    type: "Ultimate Plan",
-    about: "Perfect choice for hard players",
-    price: "$49.00",
-    label: "Get Start now",
-    specs: "Everything in pro, plus:",
-  },
-];
-
 export const testidata = [
   {
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempore earum sapiente, mollitia quidem architecto et, assumenda perspiciatis, blanditiis vel ex repudiandae quaerat voluptatibus. Natus accusamus repudiandae labore voluptas aliquam.",
-    name: "Adam Self",
-    post: "Web Developer",
+      "Plan D turned my small business into a recognized brand. Their targeted advertising campaigns were a game-changer, driving more traffic and increasing conversions. Couldn’t be happier!",
+    name: "Michael Lee",
+    post: "E-commerce Business Owner",
   },
   {
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempore earum sapiente, mollitia quidem architecto et, assumenda perspiciatis, blanditiis vel ex repudiandae quaerat voluptatibus. Natus accusamus repudiandae labore voluptas aliquam.",
-    name: "Riya Alex",
-    post: "UI/UX Designer",
+      "Working with Plan D was the best decision we made for our brand. Their team’s expertise and out-of-the-box ideas brought our vision to life, resulting in a noticeable boost in sales and customer loyalty!",
+    name: "Emily Carter",
+    post: "Freelance Content Strategist",
   },
   {
     review:
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem tempore earum sapiente, mollitia quidem architecto et, assumenda perspiciatis, blanditiis vel ex repudiandae quaerat voluptatibus. Natus accusamus repudiandae labore voluptas aliquam.",
-    name: "Sam Idli",
-    post: "Android Developer",
+      "I was blown away by the attention to detail and professionalism. Their branding ideas resonated perfectly with our target audience, and their ad campaigns significantly boosted our sales. Exceptional work!",
+    name: "Jason Mitchell",
+    post: "CEO of GreenPath Organic",
   },
 ];

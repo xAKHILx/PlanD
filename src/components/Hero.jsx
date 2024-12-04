@@ -12,54 +12,60 @@ const Hero = () => {
       easing: "ease-in-out-sine",
     });
   }, []);
+
   return (
     <section
       id="hero"
-      className="w-[90%] m-auto flex lg:flex-row flex-col justify-between items-center gap-28 py-20 bg-purple-400 p-[40px] rounded-3xl"
+      className="container mx-auto px-6 lg:px-20 flex flex-col lg:flex-row justify-between items-center gap-10 py-16 rounded-3xl"
+      // bg-purple-400
     >
-      <div className="flex flex-col justify-center items-start gap-8">
+      {/* Left Section - Text and Content */}
+      <div className="lg:w-1/2 w-full flex flex-col justify-center items-center lg:items-start text-center lg:text-left gap-6">
         <h1
           data-aos="zoom-in"
-          data-aos-delay=""
-          className="text-black font-semibold lg:text-[90px] text-[65px] lg:leading-[100px] leading-[80px] font-rlway"
+          className="text-black font-semibold text-[30px] md:text-[50px] lg:text-[65px] xl:text-[80px] leading-tight lg:leading-[90px] font-rlway"
         >
           Unlock growth using creativity & data to boost your business
         </h1>
         <p
           data-aos="zoom-in"
           data-aos-delay="400"
-          className="font-rlway text-[20px] text-slate-700"
+          className="font-rlway text-[16px] md:text-[18px] lg:text-[20px] text-slate-700 leading-relaxed"
         >
-          Let's start something big together,
-          <br />
-          lets increase your revenue using our expert knowledge for your
-          business
+          Let's start something big together. <br />
+          Increase your revenue using our expert knowledge for your business.
         </p>
-
         <button
           data-aos="zoom-in"
           data-aos-delay="600"
-          className="bg-purp text-white px-6 py-4 rounded-full text-[17px] font-semibold font-rlway hover:bg-black hover:text-white"
+          className="bg-purp text-white px-6 py-3 rounded-full text-[16px] md:text-[18px] font-semibold font-rlway hover:bg-black hover:text-white transition"
         >
           Get in touch
         </button>
-
         <div
           data-aos="zoom-in"
-          data-aos-delay="600"
-          className="flex lg:flex-row flex-col justify-center lg:items-center items-start gap-10"
-        ></div>
-        <img src={clients} alt="" />
-        <p className="font-rlway text-[20px] font-bold text-black">
-          Trusted by 1000+ Worldwide Brand & Customers
-        </p>
+          data-aos-delay="800"
+          className="flex flex-col lg:flex-row justify-center lg:items-center items-start gap-6 mt-6"
+        >
+          <img
+            src={clients}
+            alt="Clients"
+            className="w-[200px] md:w-[300px] lg:w-[400px] object-contain"
+          />
+          <p className="font-rlway text-[16px] md:text-[18px] lg:text-[20px] font-bold text-black">
+            Trusted by 1000+ Worldwide Brands & Customers
+          </p>
+        </div>
       </div>
-      <div>
+
+      {/* Right Section - Hero Image */}
+      <div className="lg:w-1/2 w-full flex justify-center">
         <img
           data-aos="zoom-in"
           data-aos-delay="1000"
           src={herobanner}
-          className="xl:w-[100vw] xl:h-[90vh] lg:w-[500] lg:h-[300]"
+          alt="Hero Banner"
+          className="w-full max-w-[400px] md:max-w-[600px] lg:max-w-[700px] object-cover"
         />
       </div>
     </section>
