@@ -44,20 +44,20 @@ export const servicesinfo = [
 
 export const counts = [
   {
-    value: "90%",
-    title: "Conversion Rate",
+    value: "500+",
+    title: "Happy Clients",
   },
   {
-    value: "70K+",
-    title: "Active Users",
+    value: "1000+",
+    title: "Projects Completed",
   },
   {
-    value: "47K+",
-    title: "Social Profiles",
+    value: "5",
+    title: "Years Of Experience",
   },
   {
-    value: "27K+",
-    title: "Active Followers",
+    value: "100+",
+    title: "Professional Team",
   },
 ];
 
